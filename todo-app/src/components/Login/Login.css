@@ -1,0 +1,7 @@
+.login_sign_desc{
+        margin: 1vw;
+}
+.login_sign_desc a{
+color: var(--baseColor);
+cursor: pointer;
+}

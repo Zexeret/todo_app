@@ -1,0 +1,175 @@
+.add_new_todo_container{
+background: #0d0d0d;
+    padding: 2vw;
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    color: #e1e1e1;
+    font-size: 0.9vw;
+    letter-spacing: 0px;
+    width: 30vw;
+    font-weight: 500;
+    box-shadow: 0 0 7px #656565;
+}
+.add_new_todo_container hr{
+        margin: 3vh 0vh;
+            border: 1px solid #424242;
+}
+
+/* Heading CSS Starts here ####################################*/
+.add_new_todo_container .heading{
+margin: 0vw 1vw 1vw 1vw;
+}
+.add_new_todo_container .heading h2{
+text-align: center;
+    margin-bottom: 2vh;
+    font-size: 1.8vw;
+}
+.add_new_todo_container .heading p{
+    
+}
+
+/* Heading CSS End here ####################################*/
+
+/* Input CSS Starts here ####################################*/
+.add_new_todo_container .input-form{
+        display: flex;
+    flex-direction: column;
+}
+.add_new_todo_container .input-form label{
+        margin: 2vh 0vh 0vh 1.5vh;
+}
+.add_new_todo_container .input-form input{ 
+        margin: 0.5vh 0vh 0vh 0vh;
+    outline-width: 0;
+    padding: 1vw 1vw;
+    border: none;
+    border-radius: 10px;
+    /* background-color: #fcfcfc1c; */
+    background-color: #fcfcfc00;
+    color: white;
+     border: 2px solid var(--baseColor);
+     cursor: auto;  
+}
+.add_new_todo_container .input-form input:focus{ 
+    border: 2px solid var(--baseColor);   
+}
+.add_new_todo_container .input-form textarea:focus{ 
+    border: 2px solid var(--baseColor);   
+}
+.add_new_todo_container .input-form select:focus{ 
+    border: 2px solid var(--baseColor);   
+}
+
+.add_new_todo_container .input-form textarea{ 
+        margin: 0.5vh 0vh 0vh 0vh;
+    outline-width: 0px;
+color: white;
+    height: 10vh;
+    padding: 1vw 1vw;
+    border: none;
+    border-radius: 10px;
+    background-color: #fcfcfc00;
+    overflow: scroll;
+     border: 2px solid var(--baseColor);  
+      cursor: auto;
+}
+.add_new_todo_container .input-form select{
+         margin: 0.5vh 0vh 0vh 0vh;
+    outline-width: 0;
+    padding: 1vw 1vw;
+    border: none;
+    border-radius: 10px;
+    background-color: #fcfcfc00;
+color: white;
+ border: 2px solid var(--baseColor);  
+  cursor: auto;
+}
+.add_new_todo_container .input-form select  option{
+
+    background: #0d0d0d;
+}
+
+.input_checkbox{
+        margin: 0.5vw 1vw;
+    display: flex;
+    align-items: center;
+        
+}
+.input_checkbox label{
+         margin: 0vw !important;
+    padding: 1vw;
+    cursor: pointer;
+
+}
+.input_checkbox input{
+     margin: 0vw !important;
+     cursor: pointer;
+}
+
+/* Input CSS End here ####################################*/
+
+/* Footer CSS Start here ####################################*/
+
+.add_new_todo_container footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add_new_todo_container footer > button {
+    /* background-color: #0447ffd1; */
+    background-color: var(--baseColor);
+    color: white;
+    font-size: 0.85rem;
+    padding: 0.8vw 3vw;
+    margin: 0vw 0.5vw;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.add_new_todo_container footer > button:active {
+    background-color: var(--baseColor);
+  transform: scale(1.02);
+}
+
+/* Footer CSS End here ####################################*/
+
+
+@media screen and (max-width:700px) {
+    .add_new_todo_container{
+    font-size: 2.5vw;
+    letter-spacing: 0.2px;
+    width: 60vw;
+    font-weight: 400;
+
+}
+.add_new_todo_container .input-form input {
+
+    padding: 2vw 3vw;
+    font-size: 1em;
+    letter-spacing: 0.2px;
+
+}
+
+.add_new_todo_container .input-form textarea{ 
+    padding: 2vw 3vw;
+        font-size: 1em;
+letter-spacing: 0.2px;
+}
+.add_new_todo_container .input-form select{
+
+        font-size: 1em;
+}
+.add_new_todo_container footer > button {
+
+    font-size: 0.6rem;
+    padding: 1.5vw 3vw;
+
+}
+.add_new_todo_container .heading h2 {
+
+    font-size: 3.5vw;
+
+}
+    
+}

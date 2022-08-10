@@ -1,0 +1,144 @@
+.content__body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sort Button CSS START ///////////////////////////////////////////////////////////// */
+.sort_buttons {
+  align-self: flex-end;
+  background-color: transparent;
+  display: flex;
+  margin: 0.7vw 3.1vw;
+}
+
+.sort_buttons button {
+  background-color: transparent;
+    border-radius: 20px;
+    /* width: 3.3vw; */
+    height: 3.3vw;
+    margin: 0px 15px;
+    padding: 0vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+  border: none;
+  z-index: 1;
+}
+.sort_buttons button img {
+  filter: invert(1);
+  width: 1.1vw;
+  cursor: pointer;
+}
+.sort_buttons button span {
+  cursor: pointer;
+  font-size: 0.9vw;
+  font-weight: 800;
+      margin: 0vw 1vw;
+}
+
+.sort_buttons button:nth-child(1) {
+  color: white;
+  border: 2px solid;
+    /* width: 8vw; */
+
+}
+.sort_buttons button:nth-child(3) {
+  color: var(--task-complete-color);
+}
+.sort_buttons button:nth-child(2) {
+  color: var(--task-pending-color);
+}
+
+.border-icon-button {
+  border: 2px solid !important;
+}
+
+.box-shadow-icon-button {
+  box-shadow: 0px 0px 10px 1px;
+}
+
+/* SORT Button CSS End //////////////////////////////////////////////// */
+
+/* Section Container CSS Start /////////////////////////////////////////// */
+.section_container {
+  border: 2px solid #656565;
+  margin: 2vh 3vw 3vh 0vh;
+  padding: 0vw 1.3vw;
+  border-radius: 5px;
+}
+
+.section_name {
+  color: #656565;
+  font-weight: 600;
+  font-size: 1.1vw;
+  position: relative;
+  background: #000000;
+  display: inline-block;
+  bottom: 18px;
+  left: 0px;
+  border-radius: 50%;
+  padding: 8px 5px;
+}
+
+/* Section Container CSS End /////////////////////////////////////////// */
+
+/* Add Task Button CSS */
+.add_task_button {
+    cursor: pointer;
+    display: flex;
+    background-color: var(--baseColor);
+    box-shadow: 0px 3px 6px 0px #383838;
+    border-radius: 50%;
+    padding: 12px;
+    /* width: 50px; */
+    /* height: 50px; */
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 6vh;
+    right: 4vw;
+}
+
+.add_task_button:active {
+  transform: scale(1.1);
+}
+
+.add_task_button > img {
+  filter: invert(1);
+  width: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .add_task_button > img {
+    width: 20px;
+  }
+
+  .sort_buttons {
+    align-self: center;
+    background-color: transparent;
+    display: flex;
+    margin: 1vw 3.1vw;
+  }
+  .sort_buttons button {
+    /* width: 10vw; */
+    height: 10vw;
+  }
+  .sort_buttons button img {
+    width: 2.7vw;
+  }
+  .sort_buttons button span {
+    font-size: 3.3vw;
+    margin: 0vw 2vw;
+  }
+  .section_container {
+  margin: 2vh 3vw 2vh 2vh;
+}
+.section_name{
+    font-size: 3.8vw;
+    bottom: 18px;
+
+}
+
+}

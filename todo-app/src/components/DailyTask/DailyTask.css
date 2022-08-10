@@ -1,0 +1,47 @@
+.daily_task_container {
+  padding: 1vw;
+}
+
+.daily_task_top_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 3vw 2vw 3vw;
+}
+
+.daily_task_heading {
+  font-size: 2vw;
+  text-shadow: 1px 1px 2px white;
+}
+
+.daily_task_reset {
+  background-color: var(--baseColor);
+  color: white;
+  font-size: 1vw;
+  padding: 0vw 3vw;
+  border-radius: 15px;
+  letter-spacing: 0.4px;
+  border: none;
+  box-shadow: 0px 0px 18px #6d6d6d;
+  cursor: pointer;
+}
+.daily_task_reset:active {
+  transform: scale(1.1);
+}
+
+.daily_tasks_section {
+  padding: 1vw 3vw;
+}
+
+
+@media screen and (max-width: 700px) {
+  .daily_task_heading {
+    font-size: 4.5vw;
+  }
+  .daily_task_top_row {
+    padding: 1vw 6vw 2vw 6vw;
+  }
+  .daily_task_reset{
+        font-size: 3vw;
+    padding: 0vw 6vw;
+  }
+}

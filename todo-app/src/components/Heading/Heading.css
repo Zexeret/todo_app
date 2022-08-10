@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "blenda_scriptregular";
+  src: url("./Font/blenda-script.regular-webfont.woff2") format("woff2"),
+    url("./Font/blenda-script.regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.heading__body {
+  /* height: 20vh; */
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  place-items: center;
+}
+.heading__name{
+  margin:1vw 0 0 0 ;
+}
+
+.app__name {
+  display: inline-block;
+  font-family: "blenda_scriptregular", cursive;
+  letter-spacing: 1px;
+  font-size: 5.5vw;
+  /* -webkit-text-stroke: 0px #2704ea; */
+  text-shadow: 0px 2px 6px #0000fa, 0px 0px 6px #0000fa85, 3px 3px 0px #ffffff,
+    3px 3px 9px #ffffff;
+}
+
+.app_creator {
+  display: none;
+  position: absolute;
+  left: 65vw;
+  top: 7vw;
+  font-size: 16px;
+  color: #4e4e4e;
+}
+
+.app_creator > span {
+  font-family: "blenda_scriptregular", cursive;
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+}
+
+.heading__icons {
+background-color: #0447ff00;
+    padding: 1vw;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 1px #ffffffc7;
+    cursor: pointer;
+}
+.heading__icons:active {
+  box-shadow: 0px 0px 5px 7px #ffffffc7 ;
+}
+
+.heading__icons > img {
+  color: white;
+  filter: invert(1);
+  width: 2.3vw;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .app__name {
+    display: inline-block;
+    font-family: "blenda_scriptregular", cursive;
+    letter-spacing: 1px;
+    font-size: 11vw;
+    padding: 20px 0px;
+    /* -webkit-text-stroke: 0px #2704ea; */
+    text-shadow: 0px 2px 6px #0000fa, 0px 0px 6px #0000fa85, 3px 3px 0px #ffffff,
+      3px 3px 9px #ffffff;
+  }
+
+  .app_creator {
+    display: none;
+  }
+  .heading__icons {
+    padding: 1.6vw;
+    margin-right: 10px;
+  }
+
+  .heading__icons > img {
+    width: 5vw;
+  }
+
+  .heading__name{
+    position: relative;
+    left:8vw;
+  }
+}
