@@ -6,7 +6,9 @@ import cookieParser from "cookie-parser";
 
 const corsOptions = {
   //To allow requests from client
-  origin: ["http://localhost:3000", "http://127.0.0.1"],
+  origin: process.env.REACT_APP_URL
+    ? [process.env.REACT_APP_URL]
+    : ["http://localhost:3000", "http://127.0.0.1"],
   credentials: true,
   exposedHeaders: ["set-cookie"],
 };
@@ -14,15 +16,15 @@ const corsOptions = {
 //app config
 (async () => {
   const app = express();
-  const port = process.env.PORT || 9090;
+  const port = process.env.PORT;
 
   //middleware
   app.use(express.json());
   app.use(express.urlencoded({ extended: false }));
   app.use(cors(corsOptions));
-  app.use(cookieParser()) ;
+  app.use(cookieParser());
 
-  app.use("/api",routes);
+  app.use("/api", routes);
 
   //   await connectToDatabase();
   await getDbConnection();

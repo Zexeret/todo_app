@@ -1,8 +1,10 @@
 import axios from "axios" ;
 
 import {BE_URL} from "./Constant" ;
+
+
 const Axios = axios.create({
-  baseURL: BE_URL,
+  baseURL: process.env.REACT_APP_BE_URL || BE_URL,
   withCredentials: true,
 });
 
